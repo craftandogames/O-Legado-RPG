@@ -1,0 +1,92 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="stats">Estatísticas</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+			<div>
+				<table>
+					<tr>
+						<td>Resumo</td>
+						<td>
+							<input type="text" name="data.resumo" value="{{data.data.resumo}}" />
+						</td>
+					</tr>
+				</table>
+			</div>
+            <div>
+				<label>Descrição</label>
+				<div class="item-description">
+					{{editor content=data.data.descricao target="data.descricao" button=true owner=owner editable=editable}}
+				</div>
+			</div>
+        </div>
+		
+        {{!-- Stats Tab --}}
+        <div class="tab" data-group="primary" data-tab="stats">
+			<div>
+				<table>
+					<tr>
+						<td>Herança</td>
+						<td><input name="data.heranca" type="text" value="{{data.data.heranca}}" /></td>
+					</tr>
+					<tr>
+						<td>Nível</td>
+						<td>
+							<input name="data.nivel" type="number" value="{{data.data.nivel}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Ação</td>
+						<td>
+							<input name="data.acao" type="text" value="{{data.data.acao}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Alcance</td>
+						<td>
+							<input name="data.alcance" type="text" value="{{data.data.alcance}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Alvo</td>
+						<td>
+							<input name="data.alvo" type="text" value="{{data.data.alvo}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Custo</td>
+						<td>
+							<input name="data.custo" type="number" value="{{data.data.custo}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Duração</td>
+						<td>
+							<input name="data.duracao" type="text" value="{{data.data.duracao}}" />
+						</td>
+					</tr>
+					<tr>
+						<td>Salvação</td>
+						<td>
+							<input name="data.salvacao" type="text" value="{{data.data.salvacao}}" />
+						</td>
+					</tr>
+				</table>
+			</div>
+        </div>
+    </section>
+</form>
