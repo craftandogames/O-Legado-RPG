@@ -17,7 +17,7 @@
   "primaryTokenAttribute": "secundarios.chama",
   "secondaryTokenAttribute": "secundarios.espirito_atual",
   "url": "https://github.com/craftandogames/O-Legado-RPG",
-  "manifest": "https://raw.githubusercontent.com/craftandogames/O-Legado-RPG/main/system.json",
+  "manifest": "https://raw.githubusercontent.com/craftandogames/O-Legado-RPG/main/system.json?token=GHSAT0AAAAAACRKQ6E4IISGWMT2A4GLIW6SZRGSNQQ",
   "download": "https://github.com/craftandogames/O-Legado-RPG/archive/refs/heads/main.zip",
   "license": "LICENSE.txt"
 }
